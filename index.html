@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjenčanje Iva & Davor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+        </style>
+
+</head>
+<body>
+
+<!-- Dodaj gumb za mute/unmute -->
+<button id="mute-button">Pritisni za glazbu</button>
+
+
+    <div class="invitation">
+        <header>
+            <img src="3521791.jpg" alt="Bride and Groom" class="bride-groom">
+            <h1>Iva Šabić & Davor Ljubičić</h1>
+        </header>
+        <section class="intro">
+            <h2>Dragi naši,</h2>
+            <p>Pozivamo vas da budete dio našeg velikog dana!</p>
+        </section>
+        <div class="date">
+            <h2>Nedjelja, 22.12.2024</h2>
+        </div>
+
+        <div class="slika">
+        <div class="slika2">
+
+
+        <div class="timeline-container">
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="icon"></div>
+                    <div class="content">
+                        <div class="time">14:00</div>
+                        <p>Okupljanje kod Davora</p>
+                        <span>Runović</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="icon1"></div>
+                    <div class="content">
+                        <div class="time">15:30</div>
+                        <p>Okupljanje kod Ive</p>
+                        <span>Zmijavci</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="icon2"></div>
+                    <div class="content">
+                        <div class="time">17:00</div>
+                        <p>Obred vjenčanja</p>
+                        <span>Crkva Svih Svetih, Zmijavci</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="icon3"></div>
+                    <div class="content">
+                        <div class="time">20:00</div>
+                        <p>Svečana večera</p>
+                        <span>Svadbeni salon "Bagušić", Posušje</span>
+                    </div>
+                </div>
+               
+            </div>
+      
+        </div>
+    </div>
+</div>
+        </section>
+        </section>
+     
+
+        <div class="form-container">
+            <h2>Dragi naši,</h2>
+            <p>Svoj dolazak, molimo, potvrdite najkasnije do 10. Prosinca 2024.</p>
+            <form id="sheetdb-form" action="https://sheetdb.io/api/v1/eli3yrct3hn2j" method="post">
+                <label for="name">Koliko vas dolazi na vjenčanje?</label>
+                <input type="number" id="name" name="data[broj gostiju]" required>
+                <label for="guests">Napišite ime i prezime radi rasporeda sjedećih mjesta u restoranu:</label>
+                <input type="text" id="guests" name="data[ime i prezime]" required>
+                <label for="message">Poruka:</label>
+                <textarea id="message" name="data[poruka]" rows="4"></textarea>
+                <button type="submit">Pošalji</button>
+            </form>
+            <div class="success-message" id="success-message">
+                Vaša poruka je uspješno poslana!
+            </div>
+        </div>
+
+        <section class="map">
+            <h2>Lokacija svadbenog salona</h2>
+            <div id="map-container">
+                <img src="davor-iva.png" alt="Mapa salona" id="wedding-location">
+            </div>
+            <button id="navigate-button">Otvori navigaciju</button>
+        </section>
+        <div class="srce"></div>
+
+        <footer>
+            <h2>Kontakt:</h2>
+            <p>Iva: <a href="tel:+49 172 298 7225"> +49 172 298 7225</a> <br> Davor: <a href="tel: +49 162 353 5429"> +49 162 353 5429</a></p>
+            <h2>Veselimo se vašem dolasku!</h2>
+        </footer>
+    </div>
+ <!-- Dodaj audio element -->
+ <audio id="background-music" loop>
+    <source src="silent-movie-47-by-sascha-ende-from-filmmusic-io.mp3" type="audio/mpeg">
+    Vaš preglednik ne podržava audio element.
+</audio>
+
+
+    <script src="js.js" defer></script>
+
+</body>
+</html>
